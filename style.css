@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input,
+select{
+    width: 100%;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    outline: none;
+    border: .5px solid #f0f0f0;
+    margin-top: .5rem;
+    height: 50px;
+}
+
+select{
+    font-weight: bolder;
+}
+
+/* remove // */
+input[type=date]::-webkit-datetime-edit-text,
+
+/* Remove Month */
+input[type=date]::-webkit-datetime-edit-month-field,
+
+/* Remove Date */
+input[type=date]::-webkit-datetime-edit-day-field,
+
+/* Remove Year */
+input[type=date]::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+    display: none;
+}
+
+::-webkit-outer-spin-button,
+::-webkit-inner-spin-button{
+    display: none;
+}
+
+input[type="radio"]{
+    width: 30%;
+    display: flex;
+    margin-top: 5px;
+    height: 16px;
+    accent-color: green;
+}
+
+input[type=file]::file-selector-button {
+    background-color: #ffffff;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+
+input[type="file"]{
+    background-color: #f6f7fb;
+}
+
+
+button{
+    padding: .6rem 2rem;
+    border: none;
+    outline: none;
+    background-color: #b3bbc8;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+
+.maincontainer{
+    background: #e3ecf1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 2rem;
+}
+
+.maincontainer .box{
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 70%;
+}
+
+.maincontainer .box .title{
+    padding: 1rem 2rem;
+}
+
+.maincontainer .box .confompanel{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border: 1px solid #f3f3f3;
+}
+
+.maincontainer .box .confompanel div{
+    box-shadow: 0 0 1px rgb(0, 0, 0);
+    display: flex;
+    padding: 1rem;
+}
+
+.maincontainer .box .confompanel div i{
+    color: #2c8c52;
+}
+
+.maincontainer .box .confompanel div label{
+    line-height: 15px;
+    margin-left: 5px;
+}
+
+.maincontainer .box .inputcontainer{
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.maincontainer .box .inputcontainer span{
+    color: red;
+}
+
+.maincontainer .box .inputcontainer .input-box.twobox {
+    display: flex;
+    gap: 20px;
+}
+
+.maincontainer .box .inputcontainer .check.twobox{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    padding: .5rem 1rem;
+    background-color: #f6f7fb;
+    margin-top: .5rem;
+    border-radius: 5px;
+}
+
+.maincontainer .box .inputcontainer .check.twobox div{
+    display: flex;
+    width: 30%;
+}
+
+.Active{
+    border-bottom: 2px solid green;
+}
+
+.maincontainer .box p{
+    color: #a9acb3;
+    padding: 1rem 2rem;
+    font-size: 14px;
+}
+
+.maincontainer .box .buttons{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding: 2rem;
+}
+
+.maincontainer .box .buttons .continue{
+    background-color: #56bc7a;
+}
